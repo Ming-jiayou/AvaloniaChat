@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Publish xmlns="https://github.com/avaloniaui">
+	<Executables>
+		<Executable Identifier="AvaloniaChat"
+					MainClass="AvaloniaChat.Program"
+					OutputName="AvaloniaChat" />
+	</Executables>
+	<VersionInfo CompanyName="测试"
+				 Description="一款AI聊天应用"
+				 ProductName="AvaloniaChat"
+				 AssemblyVersion="1.0.0"
+				 FileVersion="1.0.0" />
+</Publish>
