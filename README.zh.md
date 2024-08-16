@@ -1,4 +1,8 @@
-# AvaloniaChat：一个基于大语言模型用于翻译的简单应用
+简体中文|[English](./README.md) 
+
+# AvaloniaChat
+
+## 一个基于大语言模型用于翻译的简单应用✨
 
 ## 简介
 

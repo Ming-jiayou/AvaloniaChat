@@ -1,4 +1,8 @@
-# AvaloniaChat: A Simple Application Based on a Large Language Model for Translation
+[简体中文](./README.zh.md) | English
+
+# AvaloniaChat
+
+## A Simple Application Based on a Large Language Model for Translation✨
 
 ## Introduction
 
