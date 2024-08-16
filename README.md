@@ -117,7 +117,7 @@
 
 如果您看了指南，还是遇到了问题，欢迎通过我的公众号联系我：
 
-![](https://mingupupup.oss-cn-wuhan-lr.aliyuncs.com/imgs/%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png)
+![qrcode_for_gh_eb0908859e11_344](https://mingupupup.oss-cn-wuhan-lr.aliyuncs.com/imgs/qrcode_for_gh_eb0908859e11_344.jpg)
 
 
 
