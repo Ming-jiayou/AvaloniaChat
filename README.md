@@ -66,7 +66,7 @@ Translation from Chinese to English:
 
 ## Building from Source Code Guide
 
-Look here:[Building from Source Code Guide](./doc/Building from Source Code Guide.md) 
+Look here:[Building from Source Code Guide](doc/Building-From-Source-Code-Guide.md) 
 
 ## Configure other large language models
 
