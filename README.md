@@ -64,7 +64,11 @@ Translation from Chinese to English:
 
 ![image-20240816100742362](https://mingupupup.oss-cn-wuhan-lr.aliyuncs.com/imgs/image-20240816100742362.png)
 
-#### Configure other large language models
+## Building from Source Code Guide
+
+Look here:[Building from Source Code Guide](./doc/Building from Source Code Guide.md) 
+
+## Configure other large language models
 
 **Xunfei Spark**
 
