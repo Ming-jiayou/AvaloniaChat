@@ -116,7 +116,7 @@ Validate if it is configured successfully:
 
 ## Update Record
 
-2024.8.20：[Compatible With ZhiPuAI](docs/Compatible-With-ZhiPuAI)
+2024.8.20：[Compatible With ZhiPuAI](docs/Compatible-With-ZhiPuAI.md)
 
 If you found the information helpful, a star✨ would be the most significant support for me. 😊
 
