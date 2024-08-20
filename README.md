@@ -66,7 +66,7 @@ Translation from Chinese to English:
 
 ## Building from Source Code Guide
 
-Look here:[Building from Source Code Guide](doc/Building-From-Source-Code-Guide.md) 
+Look here:[Building from Source Code Guide](docs/Building-From-Source-Code-Guide.md) 
 
 ## Configure other large language models
 
@@ -113,6 +113,10 @@ Take the example of yi-large:
 Validate if it is configured successfully:
 
 ![image-20240816102914568](https://mingupupup.oss-cn-wuhan-lr.aliyuncs.com/imgs/image-20240816102914568.png)
+
+## Update Record
+
+2024.8.20：[Compatible With ZhiPuAI](docs/Compatible-With-ZhiPuAI)
 
 If you found the information helpful, a star✨ would be the most significant support for me. 😊
 
