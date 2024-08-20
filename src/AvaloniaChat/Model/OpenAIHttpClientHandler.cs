@@ -15,19 +15,35 @@ namespace AvaloniaChat.Model
         {
             UriBuilder uriBuilder;
             string url = OpenAIOption.Endpoint;
+            string platform = OpenAIOption.Platform;
             Uri uri = new Uri(url);
             string host = uri.Host;
             switch (request.RequestUri?.LocalPath)
             {
                 case "/v1/chat/completions":
-                    uriBuilder = new UriBuilder(request.RequestUri)
+                    switch(platform)
                     {
-                        // 这里是你要修改的 URL
-                        Scheme = "https",
-                        Host = host,
-                        Path = "v1/chat/completions",
-                    };
-                    request.RequestUri = uriBuilder.Uri;
+                        case "ZhiPu":
+                            uriBuilder = new UriBuilder(request.RequestUri)
+                            {
+                                // 这里是你要修改的 URL
+                                Scheme = "https",
+                                Host = host,
+                                Path = "api/paas/v4/chat/completions",
+                            };
+                            request.RequestUri = uriBuilder.Uri;
+                            break;
+                        default:
+                            uriBuilder = new UriBuilder(request.RequestUri)
+                            {
+                                // 这里是你要修改的 URL
+                                Scheme = "https",
+                                Host = host,
+                                Path = "v1/chat/completions",
+                            };
+                            request.RequestUri = uriBuilder.Uri;
+                            break;
+                    }
                     break;
             }
         

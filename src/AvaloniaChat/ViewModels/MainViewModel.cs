@@ -1,6 +1,6 @@
 ﻿using AvaloniaChat.Common.Options;
 using AvaloniaChat.Model;
-using Azure;
+using System;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.SemanticKernel;
@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace AvaloniaChat.ViewModels;
 
+#pragma warning disable SKEXP0010
 public partial class MainViewModel : ViewModelBase
 {
     private Kernel _kernel;
@@ -26,13 +27,19 @@ public partial class MainViewModel : ViewModelBase
     public string[] Languages { get; set; }
 
     public MainViewModel()
-    {        
+    {
         var handler = new OpenAIHttpClientHandler();
         var builder = Kernel.CreateBuilder()
         .AddOpenAIChatCompletion(
            modelId: OpenAIOption.ChatModel,
            apiKey: OpenAIOption.Key,
            httpClient: new HttpClient(handler));
+        //var builder = Kernel.CreateBuilder()
+        //.AddOpenAIChatCompletion(
+        //    modelId: OpenAIOption.ChatModel,
+        //    apiKey: OpenAIOption.Key,
+        //    endpoint: new Uri(OpenAIOption.Endpoint));
+
         _kernel = builder.Build();
         AskText = " ";
         ResponseText = " ";
