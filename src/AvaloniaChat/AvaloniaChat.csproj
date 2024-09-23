@@ -36,4 +36,8 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.SemanticKernel" Version="1.17.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\MessageWindow.axaml" />
+  </ItemGroup>
 </Project>

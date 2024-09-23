@@ -1,4 +1,5 @@
-﻿using AvaloniaChat.Common.Options;
+﻿using Avalonia;
+using AvaloniaChat.Common.Options;
 using AvaloniaChat.Model;
 using System;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -7,6 +8,8 @@ using Microsoft.SemanticKernel;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
 
 namespace AvaloniaChat.ViewModels;
 
@@ -54,9 +57,19 @@ public partial class MainViewModel : ViewModelBase
         {
             ResponseText = "";
         }
-        await foreach (var update in _kernel.InvokePromptStreamingAsync(AskText))
+        if(AskText == " ")
         {
-            ResponseText += update.ToString();         
+            var mainWindow = (Application.Current.ApplicationLifetime as IClassicDesktopStyleApplicationLifetime)?.MainWindow;
+            var messageWindow = new MessageWindow("输入不能为空，请检查输入是否为空！！");
+            messageWindow.ShowDialog(mainWindow);
+
+        }
+        else
+        {
+            await foreach (var update in _kernel.InvokePromptStreamingAsync(AskText))
+            {
+                ResponseText += update.ToString();
+            }
         }     
     }
 
