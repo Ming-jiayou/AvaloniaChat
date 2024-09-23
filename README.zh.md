@@ -12,8 +12,6 @@
 
 在看英文文献的过程中，比较喜欢对照着翻译看，因此希望一边是英文一边是中文，虽然某些软件已经自带了翻译功能，但还是喜欢大语言模型的翻译，但每次都要将英文复制粘贴过去还要自己手动添加prompt，还无法对照着看，因此自己基于Avalonia与Semantic Kernel开发了这款解决自己这个需求的软件，开源出来每个人都可以免费使用，希望能帮助到有同样需求的人。
 
-![](https://mingupupup.oss-cn-wuhan-lr.aliyuncs.com/imgs/AvaloniaChat02.png)
-
 ## 快速开始
 
 注意到Releases这里：

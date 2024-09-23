@@ -14,8 +14,6 @@ While reading English literature, I prefer to compare translated versions. Altho
 
 Therefore, I have developed this software based on Avalonia and Semantic Kernel to address my own needs, and I'm open-sourcing it so that everyone can use it for free. I hope it will be of help to those with similar needs.
 
-![](https://mingupupup.oss-cn-wuhan-lr.aliyuncs.com/imgs/AvaloniaChat02.png)
-
 ## Quick Start
 
 Note the 'Releases' section here:
