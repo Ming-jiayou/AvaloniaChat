@@ -16,7 +16,7 @@
    <!--<StackPanel Orientation="Horizontal">
 	   <Button Content="问AI"></Button>
    </StackPanel>-->
-	<Grid ColumnDefinitions="auto,*,*">
+	<Grid ColumnDefinitions="auto,*">
 		<ListBox
             Grid.Column="0"
             ItemsSource="{Binding Modules}"
