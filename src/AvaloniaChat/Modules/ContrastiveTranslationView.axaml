@@ -1,23 +1,10 @@
-<Window xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:AvaloniaChat.ViewModels"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:views="clr-namespace:AvaloniaChat.Views"
-		xmlns:designDatas="clr-namespace:AvaloniaChat.DesignDatas"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="550"
-        x:Class="AvaloniaChat.Views.MainWindow"
-        Icon="/Assets/avalonia-logo.ico"
-		Design.DataContext="{x:Static designDatas:DesignData.MainWindowViewModel}"
-        Title="AvaloniaChat">
-
-	   <views:MainView />
-	<!--<Design.DataContext>
-		--><!-- This only sets the DataContext for the previewer in an IDE,
-         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) --><!--
-		<vm:MainViewModel />
-	</Design.DataContext>-->
-	<!--<StackPanel>
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AvaloniaChat.ContrastiveTranslationView">
+	<StackPanel>
 		<Grid>
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />
@@ -29,7 +16,9 @@
 			<StackPanel Orientation="Horizontal">
 				 <Button Content="问AI" Margin="10"
 					     Command="{Binding AskCommand}"></Button>
-				 --><!--<Button Content="翻译为："></Button>--><!--
+				 
+	<Button Content="翻译为："></Button>
+	
 				 <Label Content="翻译为："
 						HorizontalAlignment="Center"
 						VerticalAlignment="Center"></Label>
@@ -58,5 +47,5 @@
 		</StackPanel>    
     </Grid>
 </Grid>		
-	</StackPanel>-->
-</Window>
+	</StackPanel>
+</UserControl>
