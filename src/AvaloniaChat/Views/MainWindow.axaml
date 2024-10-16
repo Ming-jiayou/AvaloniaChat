@@ -3,60 +3,15 @@
         xmlns:vm="using:AvaloniaChat.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:views="clr-namespace:AvaloniaChat.Views"
+        xmlns:views="clr-namespace:AvaloniaChat.Views"	
 		xmlns:designDatas="clr-namespace:AvaloniaChat.DesignDatas"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="550"
         x:Class="AvaloniaChat.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
 		Design.DataContext="{x:Static designDatas:DesignData.MainWindowViewModel}"
         Title="AvaloniaChat">
-
-	   <views:MainView />
 	<!--<Design.DataContext>
-		--><!-- This only sets the DataContext for the previewer in an IDE,
-         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) --><!--
-		<vm:MainViewModel />
+		<vm:MainViewModel/>
 	</Design.DataContext>-->
-	<!--<StackPanel>
-		<Grid>
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*" />
-        <ColumnDefinition Width="*" />
-    </Grid.ColumnDefinitions>
-
-    <Grid Grid.Column="0">
-		<StackPanel>
-			<StackPanel Orientation="Horizontal">
-				 <Button Content="问AI" Margin="10"
-					     Command="{Binding AskCommand}"></Button>
-				 --><!--<Button Content="翻译为："></Button>--><!--
-				 <Label Content="翻译为："
-						HorizontalAlignment="Center"
-						VerticalAlignment="Center"></Label>
-				 <ComboBox ItemsSource="{Binding Languages}"
-						   SelectedItem="{Binding SelectedLanguage}"
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"></ComboBox>
-			     <Button Content="翻译" Margin="10"
-					Command="{Binding TranslateCommand}"></Button>
-			</StackPanel>	   
-	        <TextBox Height="300"
-				     Margin="10"
-					 Text="{Binding AskText}"
-				     TextWrapping="Wrap"
-					 AcceptsReturn="True"></TextBox>
-		</StackPanel>    
-    </Grid>
-
-    <Grid Grid.Column="1">
-       <StackPanel>
-		    <Button Content="AI回答" Margin="10"></Button>
-	        <TextBox Height="300"
-				     Margin="10"
-					 Text="{Binding ResponseText}"
-	                 TextWrapping="Wrap"></TextBox>
-		</StackPanel>    
-    </Grid>
-</Grid>		
-	</StackPanel>-->
+	   <views:MainView />
 </Window>

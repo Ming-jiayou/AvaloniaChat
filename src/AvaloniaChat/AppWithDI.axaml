@@ -1,8 +1,9 @@
 <Application xmlns="https://github.com/avaloniaui"
+			 xmlns:themes="clr-namespace:Material.Styles.Themes;assembly=Material.Styles"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"           
              x:Class="AvaloniaChat.AppWithDI"
 			 RequestedThemeVariant="Default">
 	<Application.Styles>
-		<FluentTheme />
+		<themes:MaterialTheme BaseTheme="Dark" PrimaryColor="Purple" SecondaryColor="Lime" />
 	</Application.Styles>
 </Application>
