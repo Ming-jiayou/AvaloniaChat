@@ -5,9 +5,8 @@ namespace AvaloniaChat.Views;
 
 public partial class MainWindow : Window
 {
-    public MainWindow(MainViewModel viewModel)
+    public MainWindow()
     {
-        this.DataContext = viewModel;
         InitializeComponent();       
     }
 }
