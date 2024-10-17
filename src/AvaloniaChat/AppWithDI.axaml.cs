@@ -47,8 +47,9 @@ public partial class AppWithDI : Application
         // 注册配置对象到依赖注入容器
         services.AddSingleton(openAIOption);
 
-        services.AddNavigationContext()
-                .AddModule<ContrastiveTranslationModule>()               
+        services.AddNavigationContext()              
+                .AddModule<AIChatModuel>()
+                .AddModule<ContrastiveTranslationModule>()
                 .AddSingleton<MainWindow>()
                 .AddSingleton<MainView>()
                 .AddSingleton<MainViewModel>();
