@@ -25,7 +25,7 @@ namespace AvaloniaChat.Modules
         /// Alias of module for displaying usually
         /// Default value is class name of Module
         /// </summary>
-        public override string? Alias => base.Alias;
+        public override string? Alias => "对照翻译模块";
 
         /// <summary>
         /// Specifies whether this module allow multiple instances

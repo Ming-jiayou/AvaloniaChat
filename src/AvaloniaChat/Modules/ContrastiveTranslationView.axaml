@@ -15,17 +15,15 @@
 		<StackPanel>
 			<StackPanel Orientation="Horizontal">
 				 <Button Content="问AI" Margin="10"
-					     Command="{Binding AskCommand}"></Button>
-				 
-	<Button Content="翻译为："></Button>
-	
+					     Command="{Binding AskCommand}"></Button>						
 				 <Label Content="翻译为："
 						HorizontalAlignment="Center"
 						VerticalAlignment="Center"></Label>
-				 <ComboBox ItemsSource="{Binding Languages}"
+				 <ComboBox Theme="{StaticResource MaterialFilledComboBox}"
+					       ItemsSource="{Binding Languages}"
 						   SelectedItem="{Binding SelectedLanguage}"
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"></ComboBox>
+						   VerticalAlignment="Center"
+						   HorizontalAlignment="Center"></ComboBox>
 			     <Button Content="翻译" Margin="10"
 					Command="{Binding TranslateCommand}"></Button>
 			</StackPanel>	   
